@@ -57,3 +57,29 @@ console.log(`Test 2 - {} gives count of 0: ${result ? `PASS` : `FAIL`}`);
 
 // Clean up
 input, expected, actual, result, basket = undefined; // Initially undefined
+
+// Test 3 [Checks if the basket is full if there are 3 items inside]
+console.log(`Test 3`);
+console.log(`==================================================`);
+console.log(``);
+
+// Arrange
+expected = true;
+basket = new Basket();
+let bagels = [new Bagel('Peanut'), new Bagel('Jelly'), new Bagel('cheese')];
+for (let bagel of bagels) {
+  basket.addBagel(bagel);
+}
+
+// Act
+actual = basket.isFull();
+
+
+// Assert
+result = assertEquals(actual, expected);
+
+// Report
+console.log(`Test 3 - [bagel1, bagel2, bagel3] gives true for full basket: ${result ? `PASS` : `FAIL`}`);
+
+// Clean up
+input, expected, actual, result, basket = undefined; // Initially undefined

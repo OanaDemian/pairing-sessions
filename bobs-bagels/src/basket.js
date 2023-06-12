@@ -1,12 +1,10 @@
-const basket = {
-  basketItems: [],
-  addItem: function (item) {
-    this.basketItems.push(item);
-  },
-  removeItem: function (item) {
-    const index = this.basketItems.indexOf(item);
-    this.basketItems.splice(index, 1);
+
+class Basket {
+  constructor() {
+  this.basketBagels = [];
+  }
+  addBagel(bagel) {
+    this.basketBagels = [...this.basketBagels, bagel];
   }
 }
-
-module.exports = basket;
+module.exports = Basket;

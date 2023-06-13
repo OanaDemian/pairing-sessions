@@ -14,5 +14,5 @@ class Basket {
   isFull() {
     return this.basketBagels.length >= this.maxCapacity;
   }
-}
-module.exports = Basket;
+} 
+export default Basket;

@@ -1,0 +1,23 @@
+{
+  "name": "pairing-sessions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OanaDemian/pairing-sessions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OanaDemian/pairing-sessions/issues"
+  },
+  "homepage": "https://github.com/OanaDemian/pairing-sessions#readme",
+  "devDependencies": {
+    "jasmine": "^5.0.1"
+  }
+}
